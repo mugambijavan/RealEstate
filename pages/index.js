@@ -22,33 +22,35 @@ export const Banner = ({ purpose, title1, title2, desc1, desc2, buttonText, link
 
 const Home = ({ propertiesForSale, propertiesForRent }) => (
   <Box>
-    <Banner
-      purpose = 'FIND YOUR DREAM RENTAL'
-      title1 = 'Homes Tailored for'
-      title2 = 'Every Lifestyle'
-      desc1 = 'Discover stunning apartments, modern villas, spacious builder floors,'
-      desc2 = 'and unique rental options fit for every need.'
-      buttonText = 'Start Your Search'      
-      linkName='/search?purpose=for-rent'
-      imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
-    />
-    <Flex flexWrap='wrap'>
-      {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
-    </Flex>
-    <Banner
-      purpose = 'MAKE YOUR HOME OWNERSHIP DREAMS COME TRUE'
-      title1 = 'Discover, Invest, and Own Your'
-      title2 = 'Perfect Home'
-      desc1 = 'Browse through luxurious villas, prime land, elegant apartments'
-      desc2 = 'builder floors, and more to find your ideal space'
-      buttonText = 'Start Your Journey'      
-      linkName='/search?purpose=for-sale'
-      imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
-    />
-    <Flex flexWrap='wrap'>
-      {propertiesForSale.map((property) => <Property property={property} key={property.id} />)}
-    </Flex>
-  </Box>
+  <Banner
+    purpose='FIND YOUR PERFECT RENTAL'
+    title1='Explore Homes with'
+    title2='Apex Properties'
+    desc1='Discover modern apartments, elegant villas, spacious townhouses,'
+    desc2='and unique rental options designed for your comfort and convenience.'
+    buttonText='Explore Rentals'
+    linkName='/search?purpose=for-rent'
+    imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
+  />
+  <Flex flexWrap='wrap'>
+    {propertiesForRent.map((property) => <Property property={property} key={property.id} />)}
+  </Flex>
+  <Banner
+    purpose='FIND YOUR DREAM HOME'
+    title1='Discover, Invest, and Own with'
+    title2='Apex Properties'
+    desc1='Browse luxurious villas, premium apartments, prime plots of land,'
+    desc2='and more to find a space that matches your vision.'
+    buttonText='View Properties for Sale'
+    linkName='/search?purpose=for-sale'
+    imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
+  />
+  <Flex flexWrap='wrap'>
+    {propertiesForSale.map((property) => <Property property={property} key={property.id} />)}
+  </Flex>
+</Box>
+
+
 );
 
 export async function getStaticProps() {
