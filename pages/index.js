@@ -28,7 +28,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
     title2='Apex Properties'
     desc1='Discover modern apartments, elegant villas, spacious townhouses,'
     desc2='and unique rental options designed for your comfort and convenience.'
-    buttonText='Explore Rentals'
+    buttonText='Explore Properties'
     linkName='/search?purpose=for-rent'
     imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/145426814/33973352624c48628e41f2ec460faba4'
   />
@@ -41,7 +41,7 @@ const Home = ({ propertiesForSale, propertiesForRent }) => (
     title2='Apex Properties'
     desc1='Browse luxurious villas, premium apartments, prime plots of land,'
     desc2='and more to find a space that matches your vision.'
-    buttonText='View Properties for Sale'
+    buttonText='View Properties'
     linkName='/search?purpose=for-sale'
     imageUrl='https://bayut-production.s3.eu-central-1.amazonaws.com/image/110993385/6a070e8e1bae4f7d8c1429bc303d2008'
   />
